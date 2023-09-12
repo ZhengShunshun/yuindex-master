@@ -19,7 +19,7 @@ const useHistory = (
   const listCommandHistory = () => {
     return commandList;
   };
-
+  // 下一条命令
   const showNextCommand = () => {
     console.log(commandHistoryPos.value, commandList, inputCommand);
     if (commandHistoryPos.value < commandList.length - 1) {
@@ -30,7 +30,7 @@ const useHistory = (
       inputCommand.value.text = "";
     }
   };
-
+  // 上一条命令
   const showPrevCommand = () => {
     console.log(commandHistoryPos.value, commandList, inputCommand);
     if (commandHistoryPos.value >= 1) {

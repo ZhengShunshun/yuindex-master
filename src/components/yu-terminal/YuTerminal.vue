@@ -4,7 +4,7 @@
     :style="wrapperStyle"
     @click="handleClickWrapper"
   >
-    <div ref="terminalRef" class="yu-terminal" :style="mainStyle">
+    <div ref="termin  alRef" class="yu-terminal" :style="mainStyle">
       <a-collapse
         v-model:activeKey="activeKeys"
         :bordered="false"
@@ -174,7 +174,7 @@ const doSubmitCommand = async () => {
   isRunning.value = true;
   setHint("");
   let inputText = inputCommand.value.text;
-  // 执行某条历史命令
+  // 执行某条历史命令  以[!]开头的  !5就是执行第五条历史命令
   if (inputText.startsWith("!")) {
     const commandIndex = Number(inputText.substring(1));
     const command = commandList.value[commandIndex - 1];
@@ -405,7 +405,7 @@ onMounted(() => {
     });
   } else {
     terminal.writeTextOutput(
-      `Welcome to YuIndex, coolest browser index for geeks!` +
+      `Welcome to WebIndex, coolest browser index for geeks!` +
         `<a href="//github.com/liyupi/yuindex" target='_blank'> GitHub Open Source</a>`
     );
     terminal.writeTextOutput(

@@ -6,7 +6,6 @@ module.exports = {
   redisConfig: {
     host: "localhost",
     port: "6379",
-
     db: 2,
   },
   // MySQL 配置
@@ -20,6 +19,6 @@ module.exports = {
   // 百度翻译配置，自行申请免费版即可（https://fanyi-api.baidu.com/）
   baiduFanYiConfig: {
     appid: "20230825001793421",
-    key: "8BOJUnmwQSIG0j3r3ZrN",
+    key: "vuFcYi7bJdk_yJQi1mEb",
   },
 };

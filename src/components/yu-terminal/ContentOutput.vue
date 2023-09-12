@@ -1,3 +1,4 @@
+/** 把命令行输入得到的返回做一个展示 */
 <template>
   <div class="content-output">
     <template v-if="output.type === 'text'">
